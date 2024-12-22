@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom T-Shirt Designer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #tshirt {
+            position: relative;
+            display: inline-block;
+        }
+        #tshirt img {
+            width: 300px;
+        }
+        #design {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            width: 140px;
+            height: 140px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Custom T-Shirt Designer</h1>
+    <div id="tshirt">
+        <img src="blank_tshirt.png" alt="Blank T-Shirt">
+        <canvas id="design" width="140" height="140"></canvas>
+    </div>
+    <br>
+    <input type="file" id="fileInput" accept="image/*">
+    <button id="downloadBtn">Download Design</button>
+    <script src="script.js"></script>
+</body>
+</html>
